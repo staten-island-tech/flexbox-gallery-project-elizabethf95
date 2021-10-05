@@ -1,12 +1,10 @@
 html,
 body,
 * {
-  padding: 0;
-  margin: 0;
+  padding: 16px;
+  margin: 2;
   box-sizing: border-box;
   font-size: 100%; /*  Normally 100% is 16px we want the size to be 10px so we do 62.5%  */
-}
-body {
   font-family: cursive;
 }
 .block {
@@ -15,11 +13,12 @@ body {
   margin: 10px auto;
   padding: 10px auto;
 }
-.header {
-  background-color: aquamarine;
-}
 .parent {
   font-size: 30px;
   display: flex;
-  width 80vm
+  justify-content: space-between;
+}
+.child {
+  border: 1px solid red;
+  width: 24%;
 }
