@@ -16,9 +16,10 @@ body,
 .parent {
   font-size: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 26%;
 }
 .child {
   border: 1px solid red;
-  width: 24%;
+  width: 100%;
 }
