@@ -1,25 +1,23 @@
 html,
 body,
 * {
-  padding: 16px;
-  margin: 2;
-  box-sizing: border-box;
-  font-size: 100%; /*  Normally 100% is 16px we want the size to be 10px so we do 62.5%  */
   font-family: cursive;
-}
-.block {
-  width: 30%;
+  background-color: rgb(194, 142, 142);
   text-align: center;
-  margin: 10px auto;
-  padding: 10px auto;
 }
 .parent {
   font-size: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  width: 26%;
+  border-width: 0px;
+  text-align: center;
+  margin: 0px auto;
+  padding: 0px auto;
 }
 .child {
   border: 1px solid red;
   width: 100%;
+  display: flex;
+  flex-direction: row;
 }
