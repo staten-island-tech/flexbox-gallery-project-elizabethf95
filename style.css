@@ -1,11 +1,46 @@
 html,
+head,
 body,
 * {
-  margin: 3px auto;
+  margin: 5px auto;
   box-sizing: border-box;
   font-family: "Special Elite", cursive;
   background-color: rgb(255, 222, 222);
   text-align: center;
+}
+.animation {
+  height: 2rem;
+  width: 2rem;
+  animation: test 5s infinite;
+  position: absolute;
+}
+@keyframes test {
+  0% {
+    left: 50%;
+    bottom: 10%;
+    background-color: rgb(219, 175, 118);
+  }
+  25% {
+    left: 50%;
+    bottom: 20%;
+    background-color: rgb(255, 245, 154);
+  }
+  50% {
+    left: 55%;
+    bottom: 10%;
+    background-color: rgb(230, 203, 88);
+  }
+
+  75% {
+    left: 55%;
+    bottom: 10%;
+    background-color: rgb(219, 155, 118);
+  }
+  100% {
+    left: 50%;
+    bottom: 10%;
+    background-color: rgb(236, 131, 71);
+  }
 }
 
 .parent {
@@ -39,6 +74,7 @@ h1 {
   color: rgb(238, 55, 55);
 }
 #founding {
+  box-shadow: 3px 4px #0a0808;
 }
 #founding:hover {
   transform: scale(2);
@@ -47,15 +83,96 @@ h1 {
   transition: all 0.3s;
 }
 #Colossus {
+  box-shadow: 3px 4px #0a0808;
 }
 #Colossus:hover {
   border: #000000 solid 1px;
-  background: rgb(255, 255, 255);
+  background: rgb(207, 60, 60);
 }
 #Armoured {
+  box-shadow: 3px 4px #0a0808;
 }
 #Armoured:hover {
   transform: skew(-20deg);
 }
 #Attack {
+  box-shadow: 3px 4px #0a0808;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+}
+#Attack:hover {
+  animation: bounce 1s;
+}
+#Beast {
+  box-shadow: 3px 4px #0a0808;
+  transition: 1s ease;
+}
+#Beast:hover {
+  border-radius: 50%;
+  transition: 1s ease;
+}
+#Cart {
+  box-shadow: 3px 4px #0a0808;
+  transition: 1s ease;
+}
+#Cart:hover {
+  -webkit-filter: blur(5px);
+  transition: 1s ease;
+}
+#female {
+  box-shadow: 3px 4px #0a0808;
+  transition: 1s ease;
+}
+#female:hover {
+  transform: rotateZ(-50deg);
+  transition: 1s ease;
+}
+#Jaw {
+  box-shadow: 3px 4px #0a0808;
+  -webkit-filter: brightness(50%);
+  transition: all 1s ease;
+}
+#Jaw:hover {
+  -webkit-filter: brightness(100%);
+}
+#War {
+  box-shadow: 3px 4px #0a0808;
+  transition: 1s ease;
+}
+#War:hover {
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+  background: rgb(182, 35, 35);
+  padding: 30px;
+  margin: auto;
 }
