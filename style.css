@@ -176,3 +176,39 @@ header {
   padding: 30px;
   margin: auto;
 }
+
+@media screen and (max-width: 600px) {
+  .gallery-card {
+    width: 80%;
+    background-color: aquamarine;
+  }
+  .gallery {
+    width: 90vw;
+  }
+}
+a {
+  font-size: 3rem;
+}
+a:link,
+a:visited {
+  color: rgb(19, 18, 17);
+}
+a:active {
+  color: blue;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery-card {
+    width: 40%;
+    background-color: darkcyan;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery-card {
+    width: 80%;
+    background-color: darkorange;
+  }
+  .gallery {
+    width: 90vw;
+  }
+}
