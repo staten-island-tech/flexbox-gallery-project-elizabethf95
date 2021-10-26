@@ -204,17 +204,17 @@ a:active {
 @media screen and (max-width: 800px) {
   .card{
     width: 40%;
-    background-color: darkcyan;
+    background-color: rgb(255, 234, 115);
   }
 }
 @media screen and (max-width: 600px) {
   .card {
     width: 80%;
-    background-color: darkorange;
+    background-color: rgb(206, 170, 137);
   }
 }
 @media screen and (max-width: 400px) {
   .card {
     width: 100%;
-    background-color: rgb(223, 30, 30);
+    background-color: rgb(255, 169, 202);
   }
